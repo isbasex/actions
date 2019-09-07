@@ -18,5 +18,5 @@ ssh-add "$SSH_PATH/deploy_key"
 
 ssh-keyscan -t rsa $HOST >> "$SSH_PATH/known_hosts"
 
-scp -o StrictHostKeyChecking=no -rp $ARCHIVE_PATH $USER@$HOST:$PROJECT_PATH
+scp -o StrictHostKeyChecking=no -rp $SOURCE $USER@$HOST:$TARGET
 ssh -o StrictHostKeyChecking=no -A -tt -p ${PORT:-22} $USER@$HOST "$*"
