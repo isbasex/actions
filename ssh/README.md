@@ -38,6 +38,8 @@ You'll need to provide some secrets to use the action.
 * **PRIVATE_KEY**: Your SSH private key.
 * **HOST**: The host the action will SSH to to run the command. ie, `your.site.com`.
 * **USER**: The user the SSH command will auth as with the private key.
+* **SOURCE**: The directory path to copy to the server.
+* **TARGET**: Target directory path on the server.
 
 ### Optional Secrets
 
